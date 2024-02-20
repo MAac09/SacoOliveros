@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Dashboard - Saco Oliveros</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="img/logo-saco-oliveros-helicoidal-3.webp" alt="">
+                <span class="d-none d-lg-block">INTRANET</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="search-bar">
+            <form class="search-form d-flex align-items-center" method="POST" action="#">
+                <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+            </form>
+        </div><!-- End Search Bar -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                </li><!-- End Search Icon-->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge bg-primary badge-number">4</span>
+                    </a><!-- End Notification Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                        <li class="dropdown-header">
+                            Tienes 2 nuevas notificaciones
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Ver todo</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-exclamation-circle text-warning"></i>
+                            <div>
+                                <h4>Subir notas</h4>
+                                <p>Importante</p>
+                                <p>30 min.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-exclamation-circle text-warning"></i>
+                            <div>
+                                <h4>Subir notas</h4>
+                                <p>Importante</p>
+                                <p>30 min.</p>
+                            </div>
+                        </li>
+
+                    </ul><!-- End Notification Dropdown Items -->
+
+                </li><!-- End Notification Nav -->
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-chat-left-text"></i>
+                        <span class="badge bg-success badge-number">2</span>
+                    </a><!-- End Messages Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+                        <li class="dropdown-header">
+                            Tienes 2 nuevos mensajes
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2"> Ver todo</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Maria Hudson</h4>
+                                    <p>Subir notas importante</p>
+                                    <p>4 hrs</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="message-item">
+                            <a href="#">
+                                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                                <div>
+                                    <h4>Anna Nelson</h4>
+                                    <p>Subir notas</p>
+                                    <p>6 hrs. </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+
+
+                    </ul><!-- End Messages Dropdown Items -->
+
+                </li><!-- End Messages Nav -->
+
+                <li class="nav-item dropdown pe-3">
+
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+                    </a><!-- End Profile Iamge Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>Kevin Anderson</h6>
+                            <span>Docente de Primaria</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="bi bi-person"></i>
+                                <span>Mi perfil</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="bi bi-gear"></i>
+                                <span>Configuraciones</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Ayuda?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="INDEX.html">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Salir</span>
+                            </a>
+                        </li>
+
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+
+
+            <li class="nav-heading">Páginas</li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="INTRANETDOCENTE.html">
+                    <i class="bi bi-person"></i>
+                    <span>INICIO</span>
+                </a>
+            </li><!-- End Profile Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="INTRANETDOCENTEREGISTROALUMNOS.html">
+                    <i class="bi bi-envelope"></i>
+                    <span>REGISTRO ALUMNOS</span>
+                </a>
+            </li><!-- End F.A.Q Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="INTRANETDOCENTESLISTADOALUMNOS.html">
+                    <i class="bi bi-card-list"></i>
+                    <span>LISTADO ALUMNOS</span>
+                </a>
+            </li><!-- End Contact Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="INTRANETDOCENTESREGISTRODENOTAS.html">
+                    <i class="bi bi-envelope"></i>
+                    <span>REGISTRO NOTAS</span>
+                </a>
+            </li><!-- End Register Page Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="INTRANETDOCENTESCONSULTANOTAS.html">
+                    <i class="bi bi-question-circle"></i>
+                    <span>CONSULTAS NOTAS</span>
+                </a>
+            </li><!-- End Login Page Nav -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="INDEX.html">
+                    <i class="bi bi-box-arrow-in-right"></i>
+                    <span>SALIR</span>
+                </a>
+            </li><!-- End Login Page Nav -->
+
+        </ul>
+
+    </aside><!-- End Sidebar-->
+
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Intranet</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Intranet</a></li>
+                    <li class="breadcrumb-item active">Consultas de Notas</li>
+                </ol>
+            </nav>
+        </div><!-- End Page Title -->
+
+        <section class="section">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">BÚSQUEDA DE SECCIÓN</h5>
+
+                            <!-- General Form Elements -->
+                            <form>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label">Grado</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Seleccione</option>
+                                            <option value="1">Primaria</option>
+                                            <option value="2">Secundaria</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label class="col-sm-2 col-form-label">Materia</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Seleccione</option>
+                                            <option value="1">Arimetica</option>
+                                            <option value="2">Geografia</option>
+                                            <option value="2">Ciencias</option>
+                                            <option value="2">Computación</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-danger">Seleccionar</button>
+                                    <button type="reset" class="btn btn-secondary">Limpiar</button>
+                                </div>
+
+                            </form><!-- End General Form Elements -->
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-12">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">LISTADO DE NOTAS </h5>
+                            <p>Encontrarás el total de todos los alumnos y sus notas correspondintes</a>.</p>
+
+                            <!-- Table with stripped rows -->
+                            <table class="table datatable">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <b>Apellidos</b>
+                                        </th>
+                                        <th>Nombre.</th>
+                                        <th>Nota 1 </th>
+                                        <th>Nota 2</th>
+                                        <th>Nota 3</th>
+                                        <th>Nota 4 </th>
+                                        <th>Promedio</th>
+                                        <th>Observación</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>López</td>
+                                        <td>Carlos</td>
+                                        <td>15</td>
+                                        <td>04</td>
+                                        <td>16</td>
+                                        <td>03</td>
+                                        <td>10.5</td>
+                                        <td>Desaprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>González</td>
+                                        <td>Ana</td>
+                                        <td>18</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>15</td>
+                                        <td>16.5</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Martínez</td>
+                                        <td>Juan</td>
+                                        <td>12</td>
+                                        <td>14</td>
+                                        <td>13</td>
+                                        <td>15</td>
+                                        <td>13.5</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rodríguez</td>
+                                        <td>Maria</td>
+                                        <td>17</td>
+                                        <td>16</td>
+                                        <td>18</td>
+                                        <td>17</td>
+                                        <td>17.0</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pérez</td>
+                                        <td>Luis</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>14</td>
+                                        <td>16</td>
+                                        <td>14.75</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sánchez</td>
+                                        <td>Laura</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>17</td>
+                                        <td>17.0</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ramírez</td>
+                                        <td>Pedro</td>
+                                        <td>13</td>
+                                        <td>12</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>13.5</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Díaz</td>
+                                        <td>Marta</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>15.5</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fernández</td>
+                                        <td>José</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>17.5</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gómez</td>
+                                        <td>Sofía</td>
+                                        <td>16</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>15</td>
+                                        <td>15.5</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alvarez</td>
+                                        <td>Diego</td>
+                                        <td>14</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>15</td>
+                                        <td>13.5</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ortega</td>
+                                        <td>Julia</td>
+                                        <td>18</td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>17</td>
+                                        <td>17.5</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ruiz</td>
+                                        <td>Elena</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>13.5</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Moreno</td>
+                                        <td>Jorge</td>
+                                        <td>16</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>16.0</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ramos</td>
+                                        <td>Lucía</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                        <td>16</td>
+                                        <td>16.0</td>
+                                        <td>Aprobado</td>
+                                        <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#verticalycentered"> Email</button></td>
+                                    </tr>
+
+
+                                </tbody>
+
+                            </table>
+                            <!-- End Table with stripped rows -->
+                            <div class="modal fade" id="verticalycentered" tabindex="5">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Enviar Email</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <!-- General Form Elements -->
+
+                                            <div class="row mb-3">
+                                                <label for="inputText" class="col-sm-2 col-form-label">Alumno</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" value="Carlos">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputEmail" class="col-sm-2 col-form-label">Padre</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" value="Sandro">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputText" class="col-sm-2 col-form-label">Curso</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" value="Matematica">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputEmail" class="col-sm-2 col-form-label">Nota</label>
+                                                <div class="col-sm-10">
+                                                    <input type="email" class="form-control" value="11.3">
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-3">
+                                                <label for="inputText" class="col-sm-2 col-form-label">Email de
+                                                    Contacto</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" value="Sandro@gamil.com">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <label for="inputEmail" class="col-sm-2 col-form-label">Mensaje</label>
+                                                <div class="col-sm-10">
+                                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Salir</button>
+                                            <button type="button" class="btn btn-primary">Enviar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End Vertically centered Modal-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Saco Oliveros</span></strong>. Derechos reservados
+        </div>
+        <div class="credits">
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
+
+    <!--  Plugin DynamicTable -->
+    <script src="plugins/dynamicTable/jquery.dynamicTable-1.0.0.js"></script>
+
+    <script src="codigo.js"></script>
+
+</body>
+
+</html>
